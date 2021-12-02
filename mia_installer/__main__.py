@@ -107,13 +107,13 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    SyperStringKey = "Mia"
-    GiperStringKey = "MiaUserBot/"
+    SyperStringKey = "HerlockUserbot"
+    GiperStringKey = "SakirBey1/"
     InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
-    if os.path.isdir("./Mia/"):
-        rm_r("./Mia/")
+    if os.path.isdir("./HerlockUserbot/"):
+        rm_r("./HerlockUserbot/")
     repo = Repo.clone_from(str1,"./Mia/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "✨ @MiaUserBot"
+    config['DEFAULT_BIO'] = "✨ @HerlockUserBot"
     config['DEFAULT_NAME'] = "Sahip"
     config['LANGUAGE'] = LANGUAGE
     config['GALERI_SURE'] = "60"
