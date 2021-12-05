@@ -107,14 +107,14 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    SyperStringKey = "HerlockUserbot"
-    GiperStringKey = "SakirBey1/"
+    SyperStringKey = "noxusbot"
+    GiperStringKey = "herlockexe/"
     InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
-    if os.path.isdir("./HerlockUserbot/"):
-        rm_r("./HerlockUserbot/")
-    repo = Repo.clone_from(str1,"./HerlockUserbot/", branch="main")
+    if os.path.isdir("./noxusbot/"):
+        rm_r("./noxusbot/")
+    repo = Repo.clone_from(str1,"./noxusbot/", branch="main")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
